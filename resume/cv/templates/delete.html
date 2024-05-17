@@ -7,29 +7,25 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <title>Delete</title>
     <style>
-        body{
-            font-size: large;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-  .form-container {
-    margin: 0 auto;
-    width: 300px;
-  }
-  form {
-    display: flex;
-    flex-direction: column;
-  }
+   .btn1 { 
+            margin-right: 90%; 
+            padding: 20px 20px; 
+            font-size: 30px; 
+            font-weight:300;  
+            border-radius: 20px; 
+        }     
     </style>
 </head>
 
 <body>
     <h1>Delete Profile</h1>
-
     <hr>
 
    <form action="" method="post">
     {% csrf_token %}
     <p>Are you sure to delete this profile?</p>
+    <div class="btn1">
     <input type="submit" value="delete">
+  </div>
    </form>
 </body>
